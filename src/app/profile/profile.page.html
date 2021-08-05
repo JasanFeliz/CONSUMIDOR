@@ -3,7 +3,7 @@
     <ion-buttons class="back-btn" slot="start">
       <ion-menu-button style="color: white;"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Profile</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -15,16 +15,16 @@
   </div>
   <ion-item lines = "full" class="vertical-center" style="--background: transparent; width: 80%; margin: 5% 10% 0 10%;">
     <ion-icon slot="start" name="moon"></ion-icon>
-    <ion-label>{{'Dark Mode'}}</ion-label>
+    <ion-label>{{'Modo oscuro'}}</ion-label>
     <ion-toggle slot="end"  (click)="darkMode()" ></ion-toggle>
   </ion-item>
 
  <div class="bottom-btns">
     <ion-button (click)="reviewHistory()" fill="clear" shape="round">
-        Review history
+      Historial de valoraciones 
       </ion-button>
       <ion-button (click)="logout()" fill="clear" shape="round">
-        Logout
+        Cerrar sesión 
       </ion-button>
  </div>
 </ion-content>

@@ -5,11 +5,11 @@
         <ion-icon style="color: white;" name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>Make a review</ion-title>
+    <ion-title>Evaluar experiencia</ion-title>
   </ion-toolbar>
   </ion-header>
 <ion-content>
-<ion-label class="title">Make a review for:</ion-label>
+<ion-label class="title">Cuéntenos su experiencias en {{data.name}}</ion-label>
 <ion-avatar>
   <img [src]="data.img" />
 </ion-avatar>
@@ -34,10 +34,10 @@ size="default"
 (ngModelChange)="onModelChange($event)" [(ngModel)]="rating">
 </rating>
 <div class="inputs">
-  <ion-input type="text" placeholder="subject"[(ngModel)]="sub"></ion-input>
+  <ion-input type="text" placeholder="titulo"[(ngModel)]="sub"></ion-input>
 </div>
-<ion-textarea [(ngModel)]="comment" placeholder="comments" cols="30" rows="10"></ion-textarea>
+<ion-textarea [(ngModel)]="comment" placeholder="comentario" cols="30" rows="10"></ion-textarea>
 <ion-button (click)="onSubmit()" fill="clear" shape="round" class="bottom-button">
-  submit
+  Valorar
 </ion-button>
 </ion-content>

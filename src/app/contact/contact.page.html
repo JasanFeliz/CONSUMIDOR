@@ -3,18 +3,18 @@
     <ion-buttons class="back-btn" slot="start">
       <ion-menu-button style="color: white;"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Contact</ion-title>
+    <ion-title>Ayuda y contacto</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <div class="heading">
-    <p><b>We are always happy to be in <br>touch, please contact us.</b><p>
+    <p><b>Para nosotros es un placer poder brindarle soporte, favor contáctarnos</b><p>
   </div>
   <div class="inputs">
-    <ion-input type="text" [(ngModel)]="sub" placeholder="subject"></ion-input>
+    <ion-input type="text" [(ngModel)]="sub" placeholder="titulo"></ion-input>
   </div>
-  <ion-textarea [(ngModel)]="comment" placeholder="comments" cols="30" rows="10"></ion-textarea>
+  <ion-textarea [(ngModel)]="comment" placeholder="comentario" cols="30" rows="10"></ion-textarea>
   <ion-button (click)="onSubmit()" fill="clear" shape="round" class="bottom-button">
-    submit
+    subir
   </ion-button>
 </ion-content>
